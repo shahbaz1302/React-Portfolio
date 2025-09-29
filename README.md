@@ -22,3 +22,6 @@ It showcases my projects, skills, and achievements with a clean UI, smooth anima
 - **Frontend:** React, TailwindCSS  
 - **Email Service:** EmailJS  
 - **Version Control:** Git & GitHub
+
+## 🖥️ Live Demo
+👉 [Click here to view the live site](https://shahbazkhann.netlify.app)
