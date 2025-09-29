@@ -6,22 +6,29 @@ It showcases my projects, skills, and achievements with a clean UI, smooth anima
 ---
 
 ## ✨ Features
-- **Responsive Layout** – Mobile-first design that adapts to any device.
-- **Hero Section** – A strong introduction with name, role, and call-to-action.
-- **Projects Showcase** – Highlights selected projects with links to GitHub and live demos.
-- **Skills & Tools** – Visual representation of technologies and frameworks I use.
-- **About Section** – Personal information, background, and journey.
-- **Contact Form** – Integrated with **EmailJS** for direct email communication without backend setup.
-- **Smooth Animations** – Subtle transitions and hover effects for enhanced user experience.
-- **SEO Optimized** – Semantic HTML and meta tags for better discoverability.
-
+- **Responsive Layout** – Works seamlessly on desktop, tablet, and mobile.
+- **Hero Section with Typing Effect** – Powered by `react-simple-typewriter` for a dynamic intro.
+- **Project Cards with Tilt Animation** – Uses `react-parallax-tilt` for 3D hover effects.
+- **Interactive Notifications** – Toast messages with `react-toastify` (e.g., contact form success/error).
+- **Skill Icons** – Clean tech stack display using `react-icons`.
+- **Contact Form** – EmailJS integration for direct messaging without backend setup.
+- **Smooth Animations** – Hover, tilt, and subtle motion for enhanced UX.
+- **SEO Optimized** – Semantic HTML and structured components.
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, TailwindCSS  
-- **Email Service:** EmailJS  
+- **Framework:** React 
+- **Styling:** TailwindCSS  
+- **Email Service:** EmailJS 
+- **Icons:** React Icons  
+- **Tilt Animation:** React Parallax Tilt 
+- **Typing Effect:** React Simple Typewriter 
+- **Toast Notifications:** React Toastify 
+- **Deployment:** Netlify 
 - **Version Control:** Git & GitHub
+
+---
 
 ## 🖥️ Live Demo
 👉 [Click here to view the live site](https://shahbazkhann.netlify.app)
