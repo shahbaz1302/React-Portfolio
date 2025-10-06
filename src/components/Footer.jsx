@@ -1,4 +1,5 @@
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   // Smooth scroll function
@@ -10,7 +11,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw]">
+    <motion.footer
+      initial={{ opacity: 0, y: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-white py-8 px-[12vw] md:px-[7vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
         <h2 className="text-xl font-semibold text-purple-500">Shahbaz Khan</h2>
@@ -39,7 +44,7 @@ const Footer = () => {
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/mohd-shahbaz-khan-58626b291" },
             { icon: <FaInstagram />, link: "https://www.instagram.com/sahill__132/" },
             { icon: <FaGithub />, link: "https://github.com/shahbaz1302" },
-            
+
           ].map((item, index) => (
             <a
               key={index}
@@ -58,7 +63,7 @@ const Footer = () => {
           © 2025 Mohd Shahbaz Khan. All rights reserved.
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

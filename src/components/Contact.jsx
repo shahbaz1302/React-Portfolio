@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -12,15 +13,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_vkjwwbw",  // Replace with your EmailJS Service ID
-        "template_1aq4ro4",  // Replace with your EmailJS Template ID
+        "service_vkjwwbw",  
+        "template_1aq4ro4",  
         form.current,
-        "tYG-5p4_cssjl7kik"  // Replace with your EmailJS Public Key
+        "tYG-5p4_cssjl7kik"  
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset(); 
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
@@ -47,7 +48,10 @@ const Contact = () => {
   };
 
   return (
-    <section
+    <motion.div
+      initial={{opacity:0,x:-200}}
+      transition={{duration:1}}
+      whileInView={{opacity:1,x:0}}
       id="contact"
       className="flex flex-col items-center justify-center py-20 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
@@ -108,7 +112,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

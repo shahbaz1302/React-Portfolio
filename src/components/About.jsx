@@ -1,10 +1,14 @@
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../assets/profile.jpg';
 import { Typewriter } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section
+    <motion.div
+      initial={{opacity:0,y:200}}
+      transition={{duration:1}}
+      whileInView={{opacity:1,y:0}}
       id="about"
       className="py-4 px-[7vw] md:px-[7vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
@@ -75,7 +79,7 @@ const About = () => {
           </Tilt>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

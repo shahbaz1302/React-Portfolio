@@ -31,4 +31,4 @@ It showcases my projects, skills, and achievements with a clean UI, smooth anima
 ---
 
 ## 🖥️ Live Demo
-👉 [Click here to view the live site](https://shahbazkhann.netlify.app)
+👉 [Click here to view the live site](https://shahbazfolio.netlify.app)

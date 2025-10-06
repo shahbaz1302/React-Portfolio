@@ -1,8 +1,12 @@
 import { education } from "../../constants";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <section
+    <motion.div
+      initial={{opacity:0,x:200}}
+      transition={{duration:1}}
+      whileInView={{opacity:1,x:0}}
       id="education"
       className="mt-35 pb-24 px-[12vw] md:px-[7vw] font-sans bg-skills-gradient clip-path-custom-3"
     >
@@ -75,7 +79,7 @@ const Education = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.div>
   );
 };
 

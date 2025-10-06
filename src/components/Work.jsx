@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { projects } from "../../constants";
+import { motion } from "framer-motion";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -13,7 +14,10 @@ const Work = () => {
   };
 
   return (
-    <section
+    <motion.div
+      initial={{opacity:0,x:-200}}
+      transition={{duration:1}}
+      whileInView={{opacity:1,x:0}}
       id="work"
       className="mt-15 px-[12vw] md:px-[7vw] lg:px-[12vw] font-sans relative"
     >
@@ -125,7 +129,7 @@ const Work = () => {
           </div>
         </div>
       )}
-    </section>
+    </motion.div>
   );
 };
 
