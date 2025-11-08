@@ -1,17 +1,16 @@
-import Tilt from 'react-parallax-tilt';
-import profileImage from '../assets/profile.jpg';
-import { Typewriter } from 'react-simple-typewriter';
-import { motion } from 'framer-motion';
+import Tilt from "react-parallax-tilt";
+import profileImage from "../assets/profile.jpg";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <motion.div
-      initial={{opacity:0,y:200}}
-      transition={{duration:1}}
-      whileInView={{opacity:1,y:0}}
+      initial={{ opacity: 0, y: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32"
-    >
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[12vw] font-sans mt-16 md:mt-24 lg:mt-32">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
@@ -28,10 +27,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <Typewriter
               words={[
-                'Fullstack Developer',
-                'Creative Coder',
-                'UI/UX Designer',
-                'Tech Enthusiast',
+                "Fullstack Developer",
+                "Creative Coder",
+                "UI/UX Designer",
+                "Tech Enthusiast",
               ]}
               typeSpeed={100}
               deleteSpeed={50}
@@ -39,26 +38,27 @@ const About = () => {
               cursor
               cursorBlinking
               loop={0}
-            /> 
+            />
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a Full Stack Developer skilled in building responsive web applications with front-end and back-end integration. Passionate about learning new technologies, I aim to create efficient solutions and grow as a developer.
+            I am a Full Stack Developer skilled in building responsive web
+            applications with front-end and back-end integration. Passionate
+            about learning new technologies, I aim to create efficient solutions
+            and grow as a developer.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1NUp9lzlUySoyPKkBDQbAiKqmDKUGRINH/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1R7iDYksuTF1oRzVpzXeyHZnX-URBmKXv/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-            }}
-          >
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+            }}>
             DOWNLOAD CV
           </a>
-          
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
@@ -69,8 +69,7 @@ const About = () => {
             perspective={1000}
             scale={1.05}
             transitionSpeed={1000}
-            gyroscope={true}
-          >
+            gyroscope={true}>
             <img
               src={profileImage}
               alt="Shahbaz Khan"
