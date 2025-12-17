@@ -15,9 +15,9 @@ const Work = () => {
 
   return (
     <motion.div
-      initial={{opacity:0,x:-200}}
+      initial={{opacity:0,y:200}}
       transition={{duration:1}}
-      whileInView={{opacity:1,x:0}}
+      whileInView={{opacity:1,y:0}}
       id="work"
       className="mt-15 px-[12vw] md:px-[7vw] lg:px-[12vw] font-sans relative"
     >

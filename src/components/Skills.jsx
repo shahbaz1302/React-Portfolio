@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Skills = () => (
   <motion.div
-    initial={{opacity:0,x:200}}
+    initial={{opacity:0,y:200}}
     transition={{duration:1}}
-    whileInView={{opacity:1,x:0}}
+    whileInView={{opacity:1,y:0}}
     id="skills"
     className="mt-24 px-[12vw] md:px-[7vw] lg:px-[12vw] font-sans bg-skills-gradient clip-path-custom" >
     {/* Section Title */}
